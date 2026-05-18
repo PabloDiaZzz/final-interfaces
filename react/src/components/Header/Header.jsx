@@ -11,12 +11,10 @@ const Header = ({ isHero }) => {
   };
 
   useEffect(() => {
-    // Close menu when route changes
     setMenuOpen(false);
   }, [location]);
 
   useEffect(() => {
-    // Manage body scroll based on menu open state
     if (menuOpen) {
       document.body.classList.add(styles.bodyMenuOpen);
     } else {

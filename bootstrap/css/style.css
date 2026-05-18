@@ -1,12 +1,12 @@
 :root {
-    /* Brand Colors */
+
     --main-color: #F88133;
     --secondary-color: #5D4037;
     --background-color: #FDF3E7;
     --accent-color: #708238;
     --extra-color: #8B0000;
 
-    /* Bootstrap Overrides */
+
     --bs-primary: var(--main-color);
     --bs-primary-rgb: 248, 129, 51;
     --bs-secondary: var(--secondary-color);
@@ -15,7 +15,7 @@
     --bs-body-color: var(--secondary-color);
     --bs-font-sans-serif: 'raleway', system-ui, -apple-system, sans-serif;
     
-    /* Button specific variables to match original */
+
     --bs-btn-primary-bg: var(--main-color);
     --bs-btn-primary-border-color: var(--main-color);
     --bs-btn-primary-color: #fff;
@@ -44,7 +44,7 @@ body {
     navigation: auto;
 }
 
-/* Custom button hover animation from original */
+
 .btn {
     transition: all 0.1s ease-in;
 }
@@ -58,7 +58,7 @@ body {
     transform: scale(0.95);
 }
 
-/* Specific elements where standard Bootstrap classes aren't enough */
+
 .social-icon {
     width: 24px;
     height: 24px;
@@ -82,7 +82,7 @@ footer a:hover {
     color: var(--accent-color) !important;
 }
 
-/* Hero image text shadow for better readability */
+
 header .text-white {
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
