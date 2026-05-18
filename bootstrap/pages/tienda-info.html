@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de la Tienda - Restaurante</title>
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+    <style>
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.5);
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="position-relative min-vh-100 d-flex flex-column">
+        <img src="../img/hero-header.webp" srcset="../img/hero-header.webp 1000w, ../img/hero-header-800.webp 800w"
+            sizes="100vw" alt="Cesta de frutas frescas sobre una mesa" loading="eager" class="hero-bg">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4 text-white" href="#">Restaurante</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center gap-3">
+                        <li class="nav-item"><a class="nav-link text-white" href="../pages/tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="../pages/posts.html">Posts</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="../pages/contacto.html">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="btn btn-outline-light" href="../index.html">Inicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center text-white px-3">
+            <h1 class="display-3 fw-bold mb-4">Nuestra Tienda Online: Productos de Proximidad</h1>
+            <h3 class="h4 fw-light mb-4" style="max-width: 800px;">La calidad del campo a solo un clic. Descubre nuestra selección de frutas y verduras frescas.</h3>
+            <a class="btn btn-primary btn-lg" href="./tienda.html">Explorar Productos</a>
+        </div>
+    </header>
+    
+    <div class="flex-grow-1 container my-5">
+        <section class="mb-5">
+            <h1 class="fw-bold mb-5 text-center">Por Qué Elegir Nuestros Productos</h1>
+            <div class="row align-items-center mb-5 gy-4">
+                <div class="col-md-6 order-md-1">
+                    <h2 class="fw-bold">Cítricos de Valencia</h2>
+                    <p>Una selección premium de naranjas, limones y mandarinas cultivadas en la soleada Comunidad Valenciana. Su sabor y frescura son incomparables. La información del artículo detalla que se trata de fruta de temporada, recogida a mano para garantizar que llegue a tu casa en el mejor estado. Son perfectas para zumos o consumo directo.</p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a class="btn btn-secondary" href="../tienda.html">Comprar Naranjas</a>
+                        <a class="btn btn-primary" href="">Ver Recetas</a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <img src="../img/naranjas.webp" srcset="../img/naranjas.webp 1000w, ../img/naranjas-800.webp 800w" sizes="50vw" alt="Naranjas apiladas" loading="lazy" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="height: 350px;">
+                </div>
+            </div>
+            <div class="row align-items-center gy-4">
+                <div class="col-md-6 order-md-2">
+                    <h2 class="fw-bold">Piñas y Frutas Exóticas</h2>
+                    <p>Traemos lo mejor de la fruta tropical directamente a tu hogar. Nuestra piña es conocida por su dulzura y la riqueza de su pulpa, ideal para un postre o un snack refrescante. El subtítulo detalla la información del artículo para que el usuario pueda entenderlo. Son frutas cuidadosamente seleccionadas de cultivos sostenibles. ¡No las encontrarás igual!</p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a class="btn btn-secondary" href="../tienda.html">Comprar Piña</a>
+                        <a class="btn btn-primary" href="">Saber Más</a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="../img/pina.webp" srcset="../img/pina.webp 1000w, ../img/pina-800.webp 800w" sizes="50vw" alt="Piña entera y cortada" loading="lazy" class="img-fluid rounded shadow-sm w-100 object-fit-cover" style="height: 350px;">
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-5 bg-light p-5 rounded-4">
+            <h1 class="fw-bold mb-4 text-center">Nuestros Productos Más Vendidos</h1>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="../img/cerezas.webp" srcset="../img/cerezas.webp 1000w, ../img/cerezas-800.webp 800w" sizes="50vw" alt="Cerezas en un cuenco" loading="lazy" class="card-img-top object-fit-cover" style="height: 300px;">
+                        <div class="card-body text-center d-flex flex-column justify-content-center">
+                            <h3 class="card-title h4">Cerezas del Jerte</h3>
+                            <p class="card-text text-muted">Las más dulces y crujientes de la temporada</p>
+                            <p class="fw-bold text-primary fs-5 mb-0">10.99€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column gap-4">
+                    <div class="card flex-grow-1 border-0 shadow-sm flex-row align-items-center">
+                        <img src="../img/naranjas.webp" srcset="../img/naranjas.webp 1000w, ../img/naranjas-800.webp 800w" sizes="50vw" alt="Naranjas valencianas" loading="lazy" class="object-fit-cover rounded-start" style="width: 150px; height: 100%;">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Naranjas</h3>
+                            <p class="card-text text-muted mb-1">Ideales para zumo o mesa</p>
+                            <p class="fw-bold text-primary mb-0">10.99€</p>
+                        </div>
+                    </div>
+                    <div class="card flex-grow-1 border-0 shadow-sm flex-row align-items-center">
+                        <img src="../img/sandia.webp" srcset="../img/sandia.webp 1000w, ../img/sandia-800.webp 800w" sizes="50vw" alt="Sandía abierta" loading="lazy" class="object-fit-cover rounded-start" style="width: 150px; height: 100%;">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Sandía</h3>
+                            <p class="card-text text-muted mb-1">Sabor refrescante para el verano</p>
+                            <p class="fw-bold text-primary mb-0">12.99€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-5">
+            <h1 class="fw-bold mb-5 text-center">Nuestros Valores Fundamentales</h1>
+            <div class="row g-4">
+                <div class="col-md-6 d-flex flex-column gap-4">
+                    <div class="d-flex gap-3 align-items-start">
+                        <svg class="text-secondary" width="40" height="40" fill="currentColor"><use href="../img/world.svg#icon"></use></svg>
+                        <div>
+                            <h3 class="h5 fw-bold">Compromiso Local</h3>
+                            <p class="text-muted mb-0">Seleccionamos proveedores de proximidad para garantizar la máxima frescura y reducir la huella de carbono. Apoyamos la economía local.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
+                        <svg class="text-secondary" width="40" height="40" fill="currentColor"><use href="../img/user.svg#icon"></use></svg>
+                        <div>
+                            <h3 class="h5 fw-bold">Atención Personalizada</h3>
+                            <p class="text-muted mb-0">Nuestro equipo está disponible para ayudarte con cualquier duda o pedido especial, ofreciendo el mejor servicio al cliente en todo momento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column gap-4">
+                    <div class="d-flex gap-3 align-items-start">
+                        <svg class="text-secondary" width="40" height="40" fill="currentColor"><use href="../img/lock.svg#icon"></use></svg>
+                        <div>
+                            <h3 class="h5 fw-bold">Compra Segura</h3>
+                            <p class="text-muted mb-0">Tu privacidad y seguridad son nuestra prioridad. Utilizamos sistemas de pago cifrados para que compres con total tranquilidad y confianza.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
+                        <svg class="text-secondary" width="40" height="40" fill="currentColor"><use href="../img/calendar.svg#icon"></use></svg>
+                        <div>
+                            <h3 class="h5 fw-bold">Frescura Garantizada</h3>
+                            <p class="text-muted mb-0">Recogemos la fruta y verdura el mismo día que la enviamos, asegurando que recibas productos recién cosechados y en su punto óptimo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="my-0">
+
+    <footer class="container py-5">
+        <div class="row gy-4">
+            <div class="col-md-4 d-flex flex-column align-items-start">
+                <div class="fw-bold fs-5 mb-3">Restaurante</div>
+                <div class="d-flex gap-3">
+                    <a aria-label="Facebook" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/fb-ico.svg#icon"></use></svg></a>
+                    <a aria-label="Linkedin" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/ln-ico.svg#icon"></use></svg></a>
+                    <a aria-label="Instagram" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/ig-ico.svg#icon"></use></svg></a>
+                    <a aria-label="Youtube" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/yt-ico.svg#icon"></use></svg></a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row text-center text-md-start">
+                    <div class="col-sm-4">
+                        <h6 class="fw-bold mb-3">Frutas</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Naranjas</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Manzanas</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Fresas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6 class="fw-bold mb-3">Verduras</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Tomates</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Lechugas</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Patatas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6 class="fw-bold mb-3">Condiciones</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Envío</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Devoluciones</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Pago Seguro</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js" loading="lazy"></script>
+    <script loading="lazy">
+        if (!window.matchMedia('(max-width:500px)').matches) {
+            const lenis = new Lenis({
+                autoRaf: true,
+            });
+        }
+    </script>
+</body>
+</html>

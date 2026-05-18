@@ -1,0 +1,19 @@
+.mainContainer {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+@media screen and (max-width: 500px) {
+    .mainContainer {
+        height: 100svh;
+        overflow-y: auto;
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .cuerpo {
+        height: auto;
+        margin: 0 2rem;
+    }
+}

@@ -1,0 +1,98 @@
+*,
+html {
+  --main-color: #f88133;
+  --secondary-color: #5d4037;
+  --background-color: #fdf3e7;
+  --accent-color: #708238;
+  --extra-color: #8b0000;
+
+  font-family: 'raleway';
+  font-weight: 450;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: raleway;
+  src: url(../fonts/raleway/Raleway-VariableFont_wght.woff2);
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0 min(7dvw, 8rem);
+  overflow-x: hidden;
+  color: var(--secondary-color);
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+}
+
+a.button,
+a.button-alt {
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: 8px;
+  overflow: visible;
+  display: inline-block;
+}
+
+a.button:hover,
+a.button-alt:hover {
+  border-radius: 20px;
+  transform: scale(1.15);
+  background-color: color-mix(in srgb, var(--secondary-color), black 30%);
+  box-shadow: 0 0 1px var(--secondary-color);
+}
+
+a.button-alt {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+a.button-alt:hover {
+  background-color: color-mix(in srgb, var(--main-color), white 30%);
+}
+
+a:hover {
+  transform: scaleX(1.15);
+  cursor: pointer;
+}
+
+a:active {
+  transform: scaleX(0.9);
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.separador {
+  height: 1px;
+  background-color: var(--main-color);
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  .separador {
+    position: relative;
+    margin-inline: 1.5rem;
+    width: calc(100vw - 3rem);
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

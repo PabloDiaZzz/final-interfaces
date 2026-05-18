@@ -1,0 +1,201 @@
+.tiendaInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tiendaInfo article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    height: auto;
+}
+
+.imgWrapper {
+    position: relative;
+    flex: 1;
+}
+
+.imgWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.texto {
+    flex: 1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.texto h1 {
+    margin: 0;
+}
+
+.texto p {
+    white-space: wrap;
+    margin-block: 2rem;
+}
+
+.imgMovil {
+    display: none;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.botones :global(.button):not(:hover),
+.botones :global(.button-alt):not(:hover) {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.botones :global(.button):hover,
+.botones :global(.button-alt):hover {
+    padding: 1rem;
+}
+
+.tiendaCompras {
+    height: 100dvh;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.comprasFlex {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.articleColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.comprasFlex article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.comprasFlex article h3 {
+    margin-bottom: 0.5rem;
+}
+
+.comprasFlex article p {
+    margin-top: 0.5rem;
+}
+
+.comprasFlex article span {
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+.tiendaValores {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.tiendaValores h1 {
+    margin: 0;
+}
+
+.valoresFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.valoresFlex svg {
+    width: 1.5rem;
+    height: 2rem;
+    color: var(--secondary-color);
+}
+
+.valoresFlex h3 {
+    margin-block: 0.25rem;
+}
+
+.valoresFlex p {
+    margin-block: 0.25rem;
+}
+
+.valoresColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .tiendaInfo {
+        gap: 0;
+    }
+
+    .imgDesk {
+        display: none;
+    }
+
+    .texto .imgMovil {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .comprasFlex {
+        flex-direction: column;
+    }
+
+    .comprasFlex article {
+        flex: 0.5;
+    }
+
+    .articleColumn article {
+        flex: 1;
+    }
+
+    .valoresFlex {
+        flex-direction: column;
+    }
+}

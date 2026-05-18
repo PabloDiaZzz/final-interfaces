@@ -1,0 +1,88 @@
+:root {
+    /* Brand Colors */
+    --main-color: #F88133;
+    --secondary-color: #5D4037;
+    --background-color: #FDF3E7;
+    --accent-color: #708238;
+    --extra-color: #8B0000;
+
+    /* Bootstrap Overrides */
+    --bs-primary: var(--main-color);
+    --bs-primary-rgb: 248, 129, 51;
+    --bs-secondary: var(--secondary-color);
+    --bs-secondary-rgb: 93, 64, 55;
+    --bs-body-bg: var(--background-color);
+    --bs-body-color: var(--secondary-color);
+    --bs-font-sans-serif: 'raleway', system-ui, -apple-system, sans-serif;
+    
+    /* Button specific variables to match original */
+    --bs-btn-primary-bg: var(--main-color);
+    --bs-btn-primary-border-color: var(--main-color);
+    --bs-btn-primary-color: #fff;
+    --bs-btn-primary-hover-bg: color-mix(in srgb, var(--main-color), white 30%);
+    --bs-btn-primary-hover-border-color: color-mix(in srgb, var(--main-color), white 30%);
+    
+    --bs-btn-secondary-bg: var(--secondary-color);
+    --bs-btn-secondary-border-color: var(--secondary-color);
+    --bs-btn-secondary-color: var(--background-color);
+    --bs-btn-secondary-hover-bg: color-mix(in srgb, var(--secondary-color), black 30%);
+    --bs-btn-secondary-hover-border-color: color-mix(in srgb, var(--secondary-color), black 30%);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: raleway;
+    src: url(../fonts/raleway/Raleway-VariableFont_wght.woff2);
+}
+
+body {
+    font-weight: 450;
+    overflow-x: hidden;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+/* Custom button hover animation from original */
+.btn {
+    transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Specific elements where standard Bootstrap classes aren't enough */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+a:hover .social-icon {
+    transform: scale(1.1);
+    fill: var(--main-color);
+}
+
+footer a {
+    transition: transform 140ms ease, letter-spacing 250ms ease-out, color 0.2s;
+    display: inline-block;
+}
+
+footer a:hover {
+    transform: scale(1.05);
+    letter-spacing: 1px;
+    color: var(--accent-color) !important;
+}
+
+/* Hero image text shadow for better readability */
+header .text-white {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}

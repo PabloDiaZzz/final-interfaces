@@ -1,0 +1,124 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: var(--secondary-color);
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    width: 20%;
+}
+
+.footerLogo {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.socialIcon {
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-color);
+    transition: fill 0.2s ease;
+}
+
+.footerSocials a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.footerSocials a:hover .socialIcon {
+    fill: var(--main-color);
+}
+
+.footerRight {
+    width: 50%;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+}
+
+.table th {
+    font-weight: 500;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.table td {
+    position: relative;
+    vertical-align: middle;
+    overflow: visible;
+    width: 33%;
+}
+
+.table td a {
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    padding: 5px;
+    display: inline-block;
+    transform-origin: center center;
+    transition: transform 140ms ease, letter-spacing 250ms ease-out;
+    will-change: transform;
+    z-index: 1;
+}
+
+.table td a:hover {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        height: 100svh;
+        box-sizing: border-box;
+        scroll-snap-align: start;
+        scroll-snap-stop: normal;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footerRight {
+        width: 100%;
+        height: auto;
+    }
+
+    .footerRight * {
+        max-width: 100vw;
+    }
+
+    .table {
+        overflow: hidden;
+    }
+
+    .table th {
+        font-size: clamp(1rem, 6.5vw, 2rem);
+    }
+
+    .table td {
+        padding: 20px 0;
+    }
+
+    .table td a {
+        font-size: clamp(0.75rem, 5vw, 1.5rem);
+        white-space: wrap; /* or normal, to wrap text */
+    }
+
+    .footerLeft {
+        width: 40%;
+        text-align: center;
+    }
+}

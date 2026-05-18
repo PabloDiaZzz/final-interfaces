@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Restaurante</title>
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Restaurante</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="../pages/tienda-info.html">Información tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/posts.html">Posts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="btn btn-secondary" href="../index.html">Inicio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="flex-grow-1 container my-5">
+        <section class="articulo-principal bg-light p-4 rounded-4 shadow-sm mb-5 min-vh-50 d-flex align-items-center justify-content-center">
+            <h2 class="text-muted fw-light">Selecciona un producto para ver los detalles</h2>
+        </section>
+        
+        <section class="mb-5">
+            <h1 class="fw-bold mb-4">Nuestros Productos Frescos</h1>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/pina.webp" srcset="../img/pina.webp 1000w, ../img/pina-800.webp 800w" sizes="50vw" alt="Piña fresca entera" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Piña Tropical</h3>
+                            <p class="card-subtitle text-muted mb-2">Directa de Canarias</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">10.99€</p>
+                            <p class="desc-articulo d-none">Una piña dulce y jugosa, perfecta para postres, zumos o para disfrutar sola. Cultivada con mimo y recogida en su punto óptimo de maduración.</p>
+                            <p class="letra-pequena d-none">Precio por unidad. Peso aproximado: 1.5kg.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/cerezas.webp" srcset="../img/cerezas.webp 1000w, ../img/cerezas-800.webp 800w" sizes="50vw" alt="Cerezas frescas en un cuenco" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Cerezas del Jerte</h3>
+                            <p class="card-subtitle text-muted mb-2">Temporada de verano</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">10.99€</p>
+                            <p class="desc-articulo d-none">Las auténticas cerezas del Valle del Jerte, dulces y crujientes. Ideales para un tentempié saludable o para acompañar tus postres. Imprescindibles en verano.</p>
+                            <p class="letra-pequena d-none">Precio por kilogramo. Origen: Cáceres, España.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/naranjas.webp" srcset="../img/naranjas.webp 1000w, ../img/naranjas-800.webp 800w" sizes="50vw" alt="Naranjas frescas de Valencia" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Naranjas de Zumo</h3>
+                            <p class="card-subtitle text-muted mb-2">De la huerta valenciana</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">10.99€</p>
+                            <p class="desc-articulo d-none">Naranjas seleccionadas por su alto contenido en zumo y su sabor inigualable. La mejor forma de empezar el día con energía y vitamina C.</p>
+                            <p class="letra-pequena d-none">Caja de 5kg. Calibre medio.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/sandia.webp" srcset="../img/sandia.webp 1000w, ../img/sandia-800.webp 800w" sizes="50vw" alt="Sandía abierta por la mitad" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Sandía Rayada</h3>
+                            <p class="card-subtitle text-muted mb-2">Refrescante y dulce</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">12.99€</p>
+                            <p class="desc-articulo d-none">La fruta estrella del verano. Gran tamaño, pulpa roja intensa y un dulzor natural. Perfecta para hidratarse y disfrutar en familia o amigos.</p>
+                            <p class="letra-pequena d-none">Precio por unidad. Peso aproximado: 6-8kg.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/limones.webp" srcset="../img/limones.webp 1000w, ../img/limones-800.webp 800w" sizes="50vw" alt="Limones frescos" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Limones Ecológicos</h3>
+                            <p class="card-subtitle text-muted mb-2">Cítricos de máxima calidad</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">5.49€</p>
+                            <p class="desc-articulo d-none">Limones sin tratar, con una piel gruesa y aromática, perfectos tanto para aderezar platos como para cócteles y repostería. Un básico esencial.</p>
+                            <p class="letra-pequena d-none">Malla de 1kg. Piel apta para ralladura.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/frutos.webp" srcset="../img/frutos.webp 1000w, ../img/frutos-800.webp 800w" sizes="50vw" alt="Variedad de frutos rojos" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Mix de Frutos Rojos</h3>
+                            <p class="card-subtitle text-muted mb-2">Arándanos, frambuesas y moras</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">7.99€</p>
+                            <p class="desc-articulo d-none">Una selección de los mejores frutos del bosque, llenos de antioxidantes y sabor. Ideales para desayunos, yogures o batidos. Muy saludable.</p>
+                            <p class="letra-pequena d-none">Tarrina de 250g. Consumir en frío.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/granada.webp" srcset="../img/granada.webp 1000w, ../img/granada-800.webp 800w" sizes="50vw" alt="Granada abierta" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Granada Mollar</h3>
+                            <p class="card-subtitle text-muted mb-2">Dulce y sabrosa</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">10.00€</p>
+                            <p class="desc-articulo d-none">Granada con pepitas pequeñas y muy dulces. Sus granos son perfectos para ensaladas, postres o para tomar solos. Una fuente de vitaminas y color.</p>
+                            <p class="letra-pequena d-none">Pack de 3 unidades. Temporada de otoño.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/caquis.webp" srcset="../img/caquis.webp 1000w, ../img/caquis-800.webp 800w" sizes="50vw" alt="Caquis en un cuenco" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Caqui Persimon</h3>
+                            <p class="card-subtitle text-muted mb-2">El mejor de la temporada</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">15.00€</p>
+                            <p class="desc-articulo d-none">Caquis de pulpa firme y sabor delicado. Se consumen como una manzana. Una fruta muy versátil y nutritiva para cualquier momento del día.</p>
+                            <p class="letra-pequena d-none">Caja de 3kg. Variedad de la Ribera del Xúquer.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="card h-100 border-0 shadow-sm producto-card" style="cursor: pointer;">
+                        <img src="../img/pomelo.webp" srcset="../img/pomelo.webp 1000w, ../img/pomelo-800.webp 800w" sizes="50vw" alt="Pomelo rosado" loading="lazy" class="card-img-top object-fit-cover" style="height: 200px;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5 fw-bold">Pomelo Rosado</h3>
+                            <p class="card-subtitle text-muted mb-2">Cítrico y ligeramente amargo</p>
+                            <p class="precio fw-bold text-primary fs-5 mt-auto mb-0">10.99€</p>
+                            <p class="desc-articulo d-none">Pomelos jugosos con un equilibrio perfecto entre dulce y ácido. Ideal para desayunos o para zumos détox. Muy bajo en calorías y refrescante.</p>
+                            <p class="letra-pequena d-none">Malla de 2kg. Calibre grande.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="my-0">
+
+    <footer class="container py-5">
+        <div class="row gy-4">
+            <div class="col-md-4 d-flex flex-column align-items-start">
+                <div class="fw-bold fs-5 mb-3">Restaurante</div>
+                <div class="d-flex gap-3">
+                    <a aria-label="Facebook" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/fb-ico.svg#icon"></use></svg></a>
+                    <a aria-label="Linkedin" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/ln-ico.svg#icon"></use></svg></a>
+                    <a aria-label="Instagram" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/ig-ico.svg#icon"></use></svg></a>
+                    <a aria-label="Youtube" class="text-body-secondary"><svg width="24" height="24" fill="currentColor"><use href="../img/yt-ico.svg#icon"></use></svg></a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row text-center text-md-start">
+                    <div class="col-sm-4">
+                        <h6 class="fw-bold mb-3">Frutas</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Naranjas</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Manzanas</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Fresas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6 class="fw-bold mb-3">Verduras</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Tomates</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Lechugas</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Patatas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6 class="fw-bold mb-3">Condiciones</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Envío</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Devoluciones</a></li>
+                            <li><a href="#" class="text-decoration-none text-body-secondary">Pago Seguro</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js" loading="lazy"></script>
+    <script loading="lazy">
+        if (!window.matchMedia('(max-width:500px)').matches) {
+            const lenis = new Lenis({
+                autoRaf: true,
+            });
+        }
+    </script>
+    <script>
+        const divArt = document.querySelector('.articulo-principal');
+
+        document.querySelectorAll('.producto-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const imgHTML = card.querySelector('img').outerHTML;
+                const title = card.querySelector('.card-title').innerText;
+                const subtitle = card.querySelector('.card-subtitle').innerText;
+                const price = card.querySelector('.precio').innerText;
+                const desc = card.querySelector('.desc-articulo').innerText;
+                const small = card.querySelector('.letra-pequena').innerText;
+                
+                divArt.classList.remove('justify-content-center');
+
+                divArt.innerHTML = `
+                    <div class="row align-items-center w-100">
+                        <div class="col-md-5 mb-4 mb-md-0">
+                            ${imgHTML.replace('card-img-top', 'img-fluid rounded shadow w-100 object-fit-cover').replace('style="height: 200px;"', 'style="height: 350px;"')}
+                        </div>
+                        <div class="col-md-7 ps-md-4">
+                            <h2 class="fw-bold mb-2">${title}</h2>
+                            <h4 class="text-muted mb-4">${subtitle}</h4>
+                            <p class="display-6 fw-bold text-primary mb-3">${price}</p>
+                            <p class="lead mb-4">${desc}</p>
+                            <p class="small text-muted mb-4">${small}</p>
+                            <button class="btn btn-primary btn-lg">Añadir al carrito</button>
+                        </div>
+                    </div>
+                `;
+                
+                // Smooth scroll up to the selected article
+                window.scrollTo({
+                    top: divArt.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            })
+        })
+    </script>
+</body>
+</html>
